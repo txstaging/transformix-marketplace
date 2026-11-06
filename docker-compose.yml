@@ -3,10 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: transformix-web
-    container_name: transformix-web
+    image: transformix-marketplace
+    container_name: transformix-marketplace
     restart: unless-stopped
     ports:
-      - "3050:3000"
+      - "3057:3000"
     environment:
       - NODE_ENV=production
